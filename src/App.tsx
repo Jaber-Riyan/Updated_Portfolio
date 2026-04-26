@@ -7,6 +7,7 @@ import BlogsPage from "./pages/BlogsPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import ManagePage from "./pages/ManagePage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/project/:id" element={<ProjectDetailPage />} />
           <Route path="/blog/:id" element={<BlogDetailPage />} />
           <Route path="/manage" element={<ManagePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </Provider>
