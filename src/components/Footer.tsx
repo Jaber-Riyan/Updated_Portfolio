@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { usePortfolioContent } from "../store";
 import { sectionLabels } from "../data";
 
@@ -21,7 +20,6 @@ export function Footer() {
           <a className="block hover:text-white" href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
           <a className="block hover:text-white" href={content.contact.github} target="_blank" rel="noreferrer">GitHub</a>
           <a className="block hover:text-white" href={content.contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          <Link to="/manage" className="block mt-4 text-cyan-300 hover:text-cyan-200">Manage CMS →</Link>
         </div>
       </div>
     </footer>

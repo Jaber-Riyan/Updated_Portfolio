@@ -13,8 +13,8 @@ export const sectionLabels: Record<SectionKey, string> = {
 };
 
 export const sectionKeys = Object.keys(sectionLabels) as SectionKey[];
-export const adminEmail = import.meta.env.VITE_ADMIN_EMAIL ?? "admin@jaber.com";
-export const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD ?? "123456";
+export const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+export const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD;
 
 declare global {
   interface ImportMeta {

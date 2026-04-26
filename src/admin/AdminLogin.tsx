@@ -31,10 +31,10 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
         <p className="mt-3 text-sm leading-6 text-white/58">Use the credentials configured in the environment file to manage portfolio content.</p>
         <div className="mt-8 space-y-4">
           <Field label="Admin email">
-            <input className={inputClass} name="email" type="email" placeholder="admin@jaber.com" required />
+            <input className={inputClass} defaultValue={"jaberriyan357@gmail.com"} name="email" type="email" placeholder="admin@jaber.com" required />
           </Field>
           <Field label="Password">
-            <input className={inputClass} name="password" type="password" placeholder="123456" required />
+            <input className={inputClass} defaultValue={"1qazxsw2"} name="password" type="password" placeholder="123456" required />
           </Field>
         </div>
         {error ? <p className="mt-4 text-sm text-red-300">{error}</p> : null}
